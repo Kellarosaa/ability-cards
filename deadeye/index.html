@@ -1,1 +1,58 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ability Cards</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        h1 {
+            color: red;
+            width: 100%; /* Full width for margin auto to work */
+            margin: 0 auto; /* Centering the header */
+            text-align: center;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+        .grid-item {
+            overflow: hidden;
+            border-radius: 8px;
+            transition: transform 0.3s;
+            text-align: center;
+            position: relative; /* Position for absolute text */
+        }
+        .grid-item:hover {
+            transform: scale(1.05);
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        .description {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ability Cards</h1>
+    <div class="grid-container">
+        <div class="grid-item"><a href="/deadeye"><img src="blank.jpeg" alt="dead eye"><p class="description">Dead Eye Abilities</p></a></div>
+        <div class="grid-item"><a href="/gun"><img src="blank.jpeg" alt="gun"><p class="description">Damage Abilities</p></a></div>
+        <div class="grid-item"><a href="/support"><img src="blank.jpeg" alt="healing"><p class="description">Support Abilities</p></a></div>
+        <div class="grid-item"><a href="/defense"><img src="blank.jpeg" alt="defense"><p class="description">Defense Abilities</p></a></div>
+    </div>
+</body>
+</html>
